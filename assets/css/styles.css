@@ -16,16 +16,16 @@
 
   /*========== Font and typography ==========*/
   /* .5rem = 8px | 1rem = 16px ... */
-  --body-font: ;
-  --second-font: ;
+  --body-font: 'IBM Plex Mono', monospace;
+  --second-font: 'Inter', sans-serif;
 
-  --big-font-size: ;
-  --h1-font-size: ;
-  --h2-font-size: ;
-  --h3-font-size: ;
-  --normal-font-size: ;
-  --small-font-size: ;
-  --smaller-font-size: ;
+  --big-font-size: 2.5rem;      /* Hero/landing */
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.75rem;
 
   /*========== Font weight ==========*/
   --weight-300: ;

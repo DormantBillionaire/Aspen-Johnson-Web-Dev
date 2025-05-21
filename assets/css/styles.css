@@ -39,7 +39,7 @@
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
   /*========== Border Radius ==========*/
-  --radius: ;
+  --radius: 0.5rem; /* = 8px */
 
   /*========== z index ==========*/
   --z-tooltip: ;

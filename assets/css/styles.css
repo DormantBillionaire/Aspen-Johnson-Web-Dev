@@ -8,9 +8,9 @@
   /*========== Colors ==========*/
   /* Color mode HSL(hue, saturation, lightness) */
   --first-color: hsl(221, 60%, 50%);         /* Primary Accent (Blue) */
-  --title-color: hsl(218, 15%, 15%);         /* Titles/Headers (Near-black) */
+  --title-color: hsl(225, 100%, 99%);         /* Titles/Headers (Near-black) */
   --text-color: hsl(218, 10%, 35%);          /* Paragraph Text (Dark Gray) */
-  --body-color: hsl(0, 0%, 98%);             /* Background (Near White) */
+  --body-color: hsl(220, 15%, 10%);             /* Background (Near White) */
   --container-color: hsl(0, 0%, 100%);       /* Card/Container (Pure White) */
   --border-color: hsl(210, 16%, 90%);        /* Light Gray Border */
 
@@ -107,6 +107,17 @@ input {
   outline: none; 
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1260px;
+  background-color: var(--body-color);
+  margin-inline: auto;
+  padding-inline: 0.75rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.75rem;
+}
 
 /*=============== HEADER & NAV ===============*/
 
@@ -115,7 +126,32 @@ input {
 /* Change background header */
 
 /*=============== HOME ===============*/
+.home {
+  padding-block: 16rem 9rem;
+}
 
+.home__container {
+  grid-template-columns: 7fr 5fr;
+  align-items: center;
+}
+
+.home__subtitle {
+  font-size: var(--small-font-size);
+  font-weight: var(--weight-400);
+  letter-spacing: 0.25rem;
+  margin-bottom: 1.25rem;
+  display: block;
+}
+
+.home__title {
+  font-family: var(--second-font);
+  font-size: var(--big-font-size);
+  font-weight: var(--weight-900);
+}
+
+.home__title span {
+  color: var(--first-color)
+}
 /*=============== ABOUT ===============*/
 
 /* Active tab */

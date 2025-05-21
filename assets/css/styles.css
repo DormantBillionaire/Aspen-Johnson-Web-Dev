@@ -42,8 +42,8 @@
   --radius: 0.5rem; /* = 8px */
 
   /*========== z index ==========*/
-  --z-tooltip: ;
-  --z-fixed: ;
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }
 
 /* Responsive typography */

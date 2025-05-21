@@ -28,15 +28,15 @@
   --smaller-font-size: 0.75rem;
 
   /*========== Font weight ==========*/
-  --weight-300: ;
-  --weight-400: ;
-  --weight-500: ;
-  --weight-600: ;
-  --weight-700: ;
-  --weight-900: ;
+  --weight-300: 300;
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+  --weight-900: 900;
 
   /*========== Transition ==========*/
-  --transition: ;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
   /*========== Border Radius ==========*/
   --radius: ;

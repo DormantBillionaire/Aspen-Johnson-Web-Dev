@@ -152,6 +152,12 @@ input {
 .home__title span {
   color: var(--first-color)
 }
+
+.home__title span {
+  color: var(--first-color);
+}
+
+
 /*=============== ABOUT ===============*/
 
 /* Active tab */

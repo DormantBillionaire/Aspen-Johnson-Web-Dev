@@ -171,7 +171,35 @@ input {
 .section-title {
   flex: 0 0 100%;
   max-width: 100% ;
-  background-color: var(--body-color);
+}
+
+.section-title h2 {
+  font-size: 40px;
+  color: var(--h2-font-size);
+  font-weight: 700;
+  position:relative;
+
+}
+
+.section-title h2::before {
+  content: '';
+  height: 4px;
+  width: 50px;
+  background-color: var(--container-color);
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.section-title h2::after {
+  content: '';
+  height: 4px;
+  width: 25px;
+  background-color: var(--container-color);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
 }
 
 

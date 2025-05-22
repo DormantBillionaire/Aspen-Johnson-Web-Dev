@@ -10,7 +10,7 @@
   --first-color: hsl(221, 60%, 50%);         /* Primary Accent (Blue) */
   --title-color: hsl(225, 100%, 99%);         /* Titles/Headers (Near-black) */
   --text-color: hsl(218, 10%, 35%);          /* Paragraph Text (Dark Gray) */
-  --body-color: hsl(220, 15%, 10%);             /* Background (Near White) */
+  --body-color: hsl(0, 0%, 35%);             /* Background (Near White) */
   --container-color: hsl(0, 0%, 100%);       /* Card/Container (Pure White) */
   --border-color: hsl(210, 16%, 90%);        /* Light Gray Border */
 
@@ -198,11 +198,18 @@ input {
 }
 
 /* About Section */
-.about .about-content,
+.about .about-content > .row:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
 .about .about-content .about-text {
   flex: 0 0 100%;
   max-width: 100%;
+  margin-bottom: 2rem;
 }
+
 
 .about .about-content .about-text h3 {
   margin-bottom: 15px;
@@ -225,7 +232,7 @@ input {
 .about .about-content .personal-info {
   flex: 0 0 60%;
   max-width: 60%;
-  margin-top: 5%;
+  margin-top: 0;   /* reset this so it lines up at the top */
 }
 
 .about .about-content .personal-info .info-item {
@@ -261,8 +268,7 @@ input {
 .about .about-content .skills {
   flex: 0 0 40%;
   max-width: 40%;
-  margin-top: 10%;
-  background-color: hsl(0, 0%, 100%);
+  margin-top: 0;   /* reset this so it lines up at the top */
 }
 
 .about .about-content .skills .skills-item {
@@ -295,7 +301,15 @@ input {
   top: 0;
   height: 100%;
   border-radius: 4px;
-  background-color: white;
+}
+
+.about .about-content .skills .skills-item .skills-percent {
+  position: absolute;
+  right: 0;
+  color: blue;
+  top: -40px;
+  font-weight: 400;
+  line-height: 40px;
 }
 
 /* Active tab */
